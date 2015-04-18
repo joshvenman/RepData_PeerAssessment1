@@ -238,9 +238,8 @@ library(gridExtra)
 </code></pre>
 
 <pre><code class="r"># Go to the directory where the activity.csv file has been unzipped and read the file in to a dataframe
-# corecing the string data in column 2 in to a date format.
+# coercing the string data in column 2 in to a date format.
 setwd(&quot;~/Dropbox/Learning/Coursera/Data Science/Reproducible Research/RepData_PeerAssessment1&quot;)
-#Windows- setwd(&quot;C:/Users/jvenman/Dropbox/Learning/Coursera/Data Science/Reproducible Research/RepData_PeerAssessment1&quot;)
 activities &lt;- read.csv(file=&quot;activity.csv&quot;, header=TRUE, na.strings=&quot;NA&quot;, colClasses=c(&quot;integer&quot;,&quot;Date&quot;,&quot;integer&quot;))
 </code></pre>
 

@@ -46,9 +46,8 @@ library(gridExtra)
 
 ```{r getdata}
 # Go to the directory where the activity.csv file has been unzipped and read the file in to a dataframe
-# corecing the string data in column 2 in to a date format.
+# coercing the string data in column 2 in to a date format.
 setwd("~/Dropbox/Learning/Coursera/Data Science/Reproducible Research/RepData_PeerAssessment1")
-#Windows- setwd("C:/Users/jvenman/Dropbox/Learning/Coursera/Data Science/Reproducible Research/RepData_PeerAssessment1")
 activities <- read.csv(file="activity.csv", header=TRUE, na.strings="NA", colClasses=c("integer","Date","integer"))
 ```
 
